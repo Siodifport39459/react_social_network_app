@@ -7,7 +7,7 @@ import './collection-item.styles.scss';
 
 const CollectionItem = ({ name, age, imageUrl}) => {
 
- 
+
   return (
     <div className='collection-item'>
       <div
@@ -21,15 +21,15 @@ const CollectionItem = ({ name, age, imageUrl}) => {
       params:name}} >{name}</Link>
         <span className='price'>{age}</span>
       </div>
-      
+
     </div>
   );
 
- 
-  
+
+
 
 };
 
 
 
-export default CollectionItem; 
+export default CollectionItem;

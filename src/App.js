@@ -18,15 +18,14 @@ class App extends React.Component {
         <Route exact path='/login' component={Login}/>
         <Route exact path='/signup' component={SignUp}/>
         <Route exact path='/friendslist' component={FriendsList}/>
-        <Route exact path='/names' component={NamesItems}/>
-        <Route exact path='/names/:id' component={NamesItems}/>
+        <Route exact path='/names/:name' component={NamesItems}/>
         </Switch>
-        
+
       </div>
     );
 
   }
- 
+
 }
 
 export default App;
