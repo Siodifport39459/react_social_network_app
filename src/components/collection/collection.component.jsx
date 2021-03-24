@@ -10,7 +10,7 @@ const Collection = ({ name, age, imageUrl,city,education,
 profession,
 friends,
 hobby,
-status}) => (
+status}) => {
 
  
   
@@ -39,11 +39,12 @@ status}) => (
       
     </div>
   
+  
 
  
   
 
-)
+      }
 
 
 

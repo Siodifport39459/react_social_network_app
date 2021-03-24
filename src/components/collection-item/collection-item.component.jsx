@@ -5,7 +5,7 @@ import NamesItems from '../Names/Names.component';
 
 import './collection-item.styles.scss';
 
-const CollectionItem = ({ name, age, imageUrl}) => {
+const CollectionItem = ({ name, imageUrl}) => {
 
 
   return (
@@ -17,9 +17,8 @@ const CollectionItem = ({ name, age, imageUrl}) => {
         }}
       />
       <div className='collection-footer'>
-        <Link className='name' to={{pathname:'/names/'+name,
-      params:name}} >{name}</Link>
-        <span className='price'>{age}</span>
+        <Link className='name' to={{pathname:'/names/'+name}} >{name}</Link>
+
       </div>
 
     </div>
