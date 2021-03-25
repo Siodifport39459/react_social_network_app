@@ -6,7 +6,7 @@ import Header from './components/Header/Header.component'
 import Login from './pages/Login/Login.component'
 import SignUp from './pages/Signup/Signup.component'
 import FriendsList from './pages/FriendsList/FriendsList.component'
-import NamesItems from './components/Names/Names.component';
+import NamesItems from './components/NamesItems/Names.component';
 
 class App extends React.Component {
   render(){
@@ -18,7 +18,7 @@ class App extends React.Component {
         <Route exact path='/login' component={Login}/>
         <Route exact path='/signup' component={SignUp}/>
         <Route exact path='/friendslist' component={FriendsList}/>
-        <Route exact path='/names/:name' component={NamesItems}/>
+        <Route exact path='/names' component={NamesItems}/>
         </Switch>
 
       </div>

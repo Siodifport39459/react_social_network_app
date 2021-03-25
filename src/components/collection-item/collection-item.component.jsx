@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import NamesItems from '../Names/Names.component';
+import { Link,Route } from 'react-router-dom';
+import NamesItems from '../NamesItems/Names.component';
 
 import './collection-item.styles.scss';
 
@@ -17,7 +17,11 @@ const CollectionItem = ({ name, imageUrl}) => {
         }}
       />
       <div className='collection-footer'>
-        <Link className='name' to={{pathname:'/names/'+name}} >{name}</Link>
+        <Route>
+        <Link className='name' to='/names' >{name}</Link>
+
+       </Route>
+        
 
       </div>
 

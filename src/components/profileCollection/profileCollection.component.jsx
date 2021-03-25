@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import NamesItems from '../Names/Names.component';
+import NamesItems from '../NamesItems/Names.component';
 import {Card} from 'react-bootstrap'
 
-import './collection.styles.scss';
+import './profileCollection.styles.scss';
 
 const Collection = ({ name, age, imageUrl,city,education,
 profession,

@@ -7,7 +7,7 @@ const Directory= () => {
     return(
         
         <div className='heading'>
-            <h1 className='greeting'>Welcome!! Here You Can Meet Your Friends..</h1>
+           
         <div className='directory'>
         <img src={image} alt='picture' className='img'/>
         </div>

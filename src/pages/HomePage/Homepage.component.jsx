@@ -7,9 +7,8 @@ const HomePage = () => {
     return(
         <div className='homepage'>
              {/* eslint-disable-next-line*/}
+             <p className='greeting'>Hello! Connect with your Friends..</p>
              <Directory/>
-            {/*<p>Hello! Connect with your Friends..</p>
-        <img src={dummyImg} alt='the dummy image' className='image'/>*/}
         </div>
         
 

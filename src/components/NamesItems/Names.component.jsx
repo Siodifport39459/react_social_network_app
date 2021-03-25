@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import React from 'react'
-import Collection from '../collection/collection.component'
+import profileCollection from '../profileCollection/profileCollection.component'
 import './Names.styles.scss'
 
 const NamesItems= () => {
@@ -62,7 +62,7 @@ render()
 <div className='preview'>
   {items
     .map(({ id, ...otherItemProps }) => (
-      <Collection key={id} {...otherItemProps} />
+      <profileCollection key={id} {...otherItemProps} />
     ))}
 </div>
 
