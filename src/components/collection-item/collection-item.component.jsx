@@ -18,7 +18,7 @@ const CollectionItem = ({ name, imageUrl}) => {
       />
       <div className='collection-footer'>
         <Route>
-        <Link className='name' to='/names' >{name}</Link>
+        <Link className='name' to='/names/:' name >{name}</Link>
 
        </Route>
         
