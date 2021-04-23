@@ -1,28 +1,23 @@
 import { render } from '@testing-library/react';
 import React from 'react';
-import { Link,Route } from 'react-router-dom';
+import { Link,Route,withRouter } from 'react-router-dom';
 import NamesItems from '../NamesItems/Names.component';
 
 import './collection-item.styles.scss';
 
-const CollectionItem = ({ name, imageUrl}) => {
-
+const CollectionItem = ({ name, imageUrl,linkUrl,match,history}) => {
 
   return (
     <div className='collection-item'>
-      <div
+      <Link
         className='image'
         style={{
           backgroundImage: `url(${imageUrl})`
         }}
+        to={"/friendslist/"+`${name}`}
       />
       <div className='collection-footer'>
-        <Route>
-        <Link className='name' to='/names/:' name >{name}</Link>
-
-       </Route>
-        
-
+       <Link className="name" to={"/friendslist/"+`${name}`}>{name}</Link>
       </div>
 
     </div>
@@ -35,4 +30,4 @@ const CollectionItem = ({ name, imageUrl}) => {
 
 
 
-export default CollectionItem;
+export default withRouter(CollectionItem);

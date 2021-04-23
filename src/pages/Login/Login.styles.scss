@@ -13,9 +13,20 @@
       display: flex;
       justify-content: space-between;
     }
-    .link{
-      padding-top: 10px;
-      font-weight: bold;
-    }
   }
+.footer{
+  display: inline-block;
+  padding-top: 20px;
+
+  .link{
+    padding-top: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .group-icon{
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+  }
+}
   

@@ -4,6 +4,7 @@ import firebase from 'firebase'
 import FormInput from '../../components/form-input/form-input.component';
 import CustomButton from '../../components/custom-button/custom-button.component';
 import {Link} from 'react-router-dom'
+import Group from '../../assets/group.svg';
 //import {Redirect} from 'react-router-dom'
 
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
@@ -77,9 +78,11 @@ class Login extends React.Component {
             </CustomButton>
           </div>
         </form>
+        <div className="footer">
+        <img className="group-icon" src={Group} alt="Group-icon"/>
         <Link className='link' to='/friendslist'>See your friends</Link>
-
-      </div>
+        </div>
+       </div>
     </div>
     );
 

@@ -18,7 +18,10 @@ class App extends React.Component {
         <Route exact path='/login' component={Login}/>
         <Route exact path='/signup' component={SignUp}/>
         <Route exact path='/friendslist' component={FriendsList}/>
-        <Route exact path='/names/:name' component={NamesItems}/>
+        <Route exact path='/friendslist/Anna'  render={() => <NamesItems name="Anna"/>}/>
+        <Route exact path='/friendslist/Susan'  render={() => <NamesItems name="Susan"/>}/>
+        <Route exact path='/friendslist/Jennie'  render={() => <NamesItems name="Jennie"/>}/>
+       
         </Switch>
 
       </div>
